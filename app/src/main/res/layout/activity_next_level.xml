@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".NextLevel">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="104dp"
+        android:contentDescription="@string/correct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_check_black_24dp" />
+
+    <TextView
+        android:id="@+id/correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correct"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tag_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nextdirect"
+        app:layout_constraintEnd_toEndOf="@+id/correct"
+        app:layout_constraintStart_toStartOf="@+id/correct"
+        app:layout_constraintTop_toBottomOf="@+id/correct" />
+
+    <Button
+        android:id="@+id/next_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="#000000"
+        android:drawableStart="@drawable/ic_play_arrow_black_24dp"
+        android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+        android:drawablePadding="10dp"
+        android:gravity="start|center_vertical"
+        android:onClick="nextLevel"
+        android:padding="10dp"
+        android:text="@string/next"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/tag_line"
+        app:layout_constraintStart_toStartOf="@+id/tag_line"
+        app:layout_constraintTop_toBottomOf="@+id/tag_line" />
+</androidx.constraintlayout.widget.ConstraintLayout>

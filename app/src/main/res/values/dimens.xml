@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Grid_height_column">60dp</dimen>
+    <dimen name="textsize_levels">24sp</dimen>
+    <dimen name="layoutmargin_levels">2dp</dimen>
+
+</resources>

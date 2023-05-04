@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#222121</color>
+    <color name="colorPrimaryDark">#131313</color>
+    <color name="colorAccent">#2F3231</color>
+    <color name="buttonBackground">#252424</color>
+    <color name="buttonDarkBackground">#1A1A1A</color>
+    <color name="buttonText">#FFFFFF</color>
+    <color name="backgroundInner">#4d4d4d</color>
+    <color name="background">#404040</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>
